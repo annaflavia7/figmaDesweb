@@ -2,6 +2,11 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html,
 body,
 div,
@@ -83,15 +88,15 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-
+/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -103,87 +108,152 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+	display: block;
 }
 
 body {
-    line-height: 1;
+	line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+	quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-/*========================================================
-                       GERAL
-==========================================================*/
-html {
-    font-size: calc(10px + 1vw);
-    margin: 1vw 0 1vw 0;
-}
+/*================================================
+                          GERAL
+    ================================================*/
+    html {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+        font-size: calc(12px + 0.390625vw);
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    main {
+        margin: 0 20vw 0 20vw;
+        }
 
-a {
-    color: darkgoldenrod;
-    text-decoration: none;
-}
-
-/*========================================================
-                       TOPO
-==========================================================*/
-header nav {
-    margin: 5vw 5vw 5vw 5vw;
-    display: flex;
-    justify-content: space-between;
+/*================================================
+                    Topo
+================================================*/        
+header {
+	margin: 1vw 8vw 1vw 6vw;
 }
 
 header nav ul {
-    display: flex;
+	display: flex;
+	justify-content: right;
 }
-
 header nav ul li {
-    margin: 0 20px 0 20px;
-    font-size: medium;
+	margin: 0 10px 0 10px;
 }
-/*========================================================
-                       CONTEÚDO 
-==========================================================*/
 
-section.banner{
-    display: flex;
-    margin: 5vw 5vw 5vw 5vw;
+/*================================================
+                    Primeira Parte
+================================================*/  
+main section.topo {
+	display: flex;
+	border-bottom: 1px ridge black;
 }
-div.h1{
-    font-family: medium;
+
+main section.topo div img {
+	margin: 1vw 1vw 1vw 0vw;
 }
-p.image1{
-    display: flex;
-    margin: 3vw 3vw 3vw 3vw;
+main section.topo div h1 {
+	font-size: 2.95rem;
+	margin: 4vw 3vw 1vw 5vw;
 }
-h1.titulo{
-    display: flex;
-    font-size: xx-large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+main section.topo div p {
+	margin: 2vw 0 0 5vw;
+	font-size: 0.90rem;
 }
-p.texto1{
-    font-size:medium;
-    padding: 5vw 5vw 5vw 5vw;
+main section.topo div ul {
+	display: flex;
+	padding: 0 3vw 0 5vw;
 }
+main section.topo div ul li p{
+	font-size: 0.8rem;
+	margin: 2vw 0 0 0vw;
+}
+main section.topo div ul li p span{
+	color: gray;
+}
+/*================================================
+                    Segunda Parte
+================================================*/
+main section.conteudo {
+	display: flex;
+	border-bottom: 1px ridge black;
+}
+
+main section.conteudo h2 {
+	font-size: 2.95rem;
+	margin: 4vw 3vw 1vw 5vw;
+}
+main section.conteudo p {
+	margin: 2vw 0 0 0;
+	font-size: 0.90rem;
+}
+main section.conteudo ol {
+	margin: 4vw 0 0 7vw;
+}
+main section.conteudo ol li h3 {
+	font-size: 2.1rem;
+}
+main section.conteudo ol li h3 span {
+	color: gray;
+	font-size: 1.4rem;
+}
+main section.conteudo ol li p {
+	color: gray;
+	margin: 1.3vw 0 1.3vw 0;
+	border-bottom: 1px ridge gray;
+	
+}
+main section.conteudo div.info {
+	width: 40%;
+}
+/*================================================
+                    Footer
+================================================*/
+
+footer {
+	text-align: center;
+	margin: 2vw 0 2vw 0;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+
+footer ul li {
+	margin: 0 10px 10px 10px;
+	font-size: 2rem;
+}
+
+
+    
